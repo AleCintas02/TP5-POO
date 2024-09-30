@@ -175,7 +175,7 @@ public class Persona {
      * Muestra la información de la persona, incluyendo nombre, apellido, DNI y edad.
      */
     public void mostrar() {
-        System.out.println("nombre y apellido: " + nomYApe() + " DNI: " + nroDni + " Edad: " + edad());
+        System.out.println("Nombre y apellido: " + nomYApe() + " \nDNI: " + nroDni + " Edad: " + edad());
     }
 }
 

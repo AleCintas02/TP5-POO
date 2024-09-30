@@ -122,16 +122,17 @@ public class Empleado extends Persona{
      * @return El apellido y nombre del empleado.
      */
     public String apeYNom(){
-        return super.getApellido() + ", " + super.getNombre();
+        return this.getApellido() + ", " + this.getNombre();
     }
     
     /**
      * Muestra información detallada del empleado: nombre, CUIL, antigüedad y sueldo neto.
      */
     public void mostrar(){
-        System.out.print("\nNombre y Apellido: " + this.apeYNom() + "\nDNI: " + super.getDNI() + "  \t Edad: " + super.edad() +
-        "\nCUIL: " + this.getCuil() + " Antiguedad: " + this.antiguedad() + " años de servicio" +
-        "\nSueldo Neto: $" + this.sueldoNeto());
+        super.mostrar();
+        System.out.println("CUIL: " + this.getCuil() + " Antiguedad: " + this.antiguedad() + " años de servicio");
+        System.out.println("Sueldo Neto: $" + this.sueldoNeto());
+       
     }
     
     /**

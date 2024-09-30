@@ -44,5 +44,37 @@ public class Facultad
     public boolean quitarProfesor(Profesor p_profesor){
         return this.getProfesores().remove(p_profesor);
     }
+    
+    public double totalAPagar(){
+        double totalAPagar=0;
+        
+        for(Profesor profesor : this.getProfesores()){
+            totalAPagar+=profesor.sueldoTotal();
+        }
+        
+        return totalAPagar;
+    }
+    
+    public void nominaProfesores(){
+        System.out.println("*************** Nómina Facultad: " + this.getNombre() + " ***************");
+        System.out.println("------------------------------------------------------------------");
+        for(Profesor profesor : this.getProfesores()){
+            System.out.println(profesor.mostrarLinea());
+        }
+        System.out.println("------------------------------------------------------------------");
+        System.out.println("Total a pagar: "+totalAPagar());
+    }
+    
+    public void listarProfesorCargos(){
+        int contProfesores=0;
+        System.out.println("*************** * Detalle de Profesores y cargos de Facultad: " + this.getNombre() + " ***************");
+        System.out.println("------------------------------------------------------------------");
+        for(Profesor profesor : this.getProfesores()){
+            profesor.mostrar();
+            contProfesores++;
+        }
+        System.out.println("------------------------------------------------------------------");
+        System.out.println("Hay " + contProfesores + " Profesores");
+    }
   
 }

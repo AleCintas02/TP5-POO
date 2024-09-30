@@ -119,9 +119,8 @@ public class Alumno extends Persona {
      * Muestra la información del alumno, incluyendo nombre, apellido, LU, notas, promedio y estado (aprobado/desaprobado).
      */
     public void mostrar() {
-        System.out.println("Nombre y Apellido: " + super.nomYApe());
-        System.out.println("DNI: " + super.getDNI() + "  \t Edad: " + super.edad());
-        System.out.println("LU: " + lu + " Notas: "+ this.getNota1() + " " + this.getNota2());
-        System.out.println("Promedio: " + this.promedio() + " - " + this.leyendaAprueba());
-    }
+    super.mostrar(); 
+    System.out.println("LU: " + this.lu + " Notas: " + this.getNota1() + " - " + this.getNota2());
+    System.out.println("Promedio: " + this.promedio() + " - " + this.leyendaAprueba());
+}
 }

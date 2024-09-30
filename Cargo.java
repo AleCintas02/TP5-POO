@@ -1,33 +1,67 @@
+import java.util.Calendar;
 
-/**
- * Write a description of class Cargo here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
- */
-public class Cargo
-{
-    // instance variables - replace the example below with your own
-    private int x;
+public class Cargo {
+    private String nombreCargo;
+    private double sueldoBasico;
+    private int anioIngreso;
+    private int horaDeDocencia;
 
-    /**
-     * Constructor for objects of class Cargo
-     */
-    public Cargo()
-    {
-        // initialise instance variables
-        x = 0;
+    public Cargo(String p_nombreCargo, double p_sueldoBasico, int p_anioIngreso, int p_horaDeDocencia) {
+        this.setNombreCargo(p_nombreCargo);
+        this.setSueldoBasico(p_sueldoBasico);
+        this.setAnioIngreso(p_anioIngreso);
+        this.setHoraDeDocencia(p_horaDeDocencia);
     }
 
-    /**
-     * An example of a method - replace this comment with your own
-     * 
-     * @param  y   a sample parameter for a method
-     * @return     the sum of x and y 
-     */
-    public int sampleMethod(int y)
-    {
-        // put your code here
-        return x + y;
+    private void setNombreCargo(String p_nombreCargo) {
+        this.nombreCargo = p_nombreCargo;
+    }
+
+    private void setSueldoBasico(double p_sueldoBasico) {
+        this.sueldoBasico = p_sueldoBasico;
+    }
+
+    private void setAnioIngreso(int p_anioIngreso) {
+        this.anioIngreso = p_anioIngreso;
+    }
+
+    private void setHoraDeDocencia(int p_horaDeDocencia) {
+        this.horaDeDocencia = p_horaDeDocencia;
+    }
+
+    public String getNombreCargo() {
+        return this.nombreCargo;
+    }
+
+    public double getSueldoBasico() {
+        return this.sueldoBasico;
+    }
+
+    public int getAnioIngreso() {
+        return this.anioIngreso;
+    }
+
+    public int getHoraDeDocencia() {
+        return this.horaDeDocencia;
+    }
+
+    public int antiguedad() {
+        Calendar calendar = Calendar.getInstance();
+        int anioActual = calendar.get(Calendar.YEAR);
+        return anioActual - this.getAnioIngreso(); 
+    }
+
+    private double adicionalXAntiguedad() {
+        double adicional = this.getSueldoBasico() * 0.01 * this.antiguedad();  
+        return adicional;
+    }
+
+    public double sueldoDelCargo() {
+        return this.getSueldoBasico() + this.adicionalXAntiguedad();
+    }
+
+    public void mostrarCargo() {
+        System.out.println(this.getNombreCargo() + " - Sueldo Básico: " + this.getSueldoBasico() + " - Sueldo Cargo: " + this.sueldoDelCargo() + " – Antigüedad: " + this.antiguedad() + " años");
+        System.out.println("Horas de Docencia: " + this.getHoraDeDocencia());
     }
 }

@@ -30,8 +30,8 @@ public class Cuadrado extends Rectangulo
     
     public void características(){
         System.out.println(this.nombreFigura());
-        System.out.println("Origen: " + super.getOrigen() + " - Lado: " + this.getLado());
-        System.out.println("Superficie: " + super.superficie() + " - Perimetro: " + super.perimetro());
+        System.out.println("Origen: " + this.getOrigen() + " - Lado: " + this.getLado());
+        System.out.println("Superficie: " + this.superficie() + " - Perimetro: " + this.perimetro());
     }
     
 }

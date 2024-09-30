@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.target=Banco
+comment0.text=\r\n\ Esta\ clase\ ejecutable\ permite\ interactuar\ con\ una\ cuenta\ corriente\ y\ caja\ de\ ahorro\ de\ una\ persona.\r\n\ Tambien\ permite\ realizar\ operaciones\ como\ dep\u00F3sitos,\ extracciones\ y\ \r\n\ mostrar\ informaci\u00F3n\ de\ las\ cuentas\ bancaria.\r\n\ \r\n\ @author\ Cintas\ Alejandro\r\n\ @author\ Larroza\ Lautaro\r\n
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+numComments=2
