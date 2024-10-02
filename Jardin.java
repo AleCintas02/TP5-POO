@@ -7,7 +7,7 @@ public class Jardin
     /**
      * Constructor for objects of class Jardin
      */
-     public Jardin(String p_nombre, ArrayList<FiguraGeometrica> figuras)
+     public Jardin(String p_nombre, ArrayList<FiguraGeometrica> p_figuras)
     {
         this.setNombre(p_nombre);
         this.setFiguras(p_figuras);
@@ -18,7 +18,20 @@ public class Jardin
         this.setFiguras(new ArrayList<FiguraGeometrica>());
     }
     
-    private void setNombre
+    private void setNombre(String p_nombre){
+        this.nombre=p_nombre;
+    }
+    private void setFiguras(ArrayList<FiguraGeometrica> p_figuras){
+        this.figuras=p_figuras;
+    }
+    
+    public String getNombre(){
+        return this.nombre;
+    }
+    public ArrayList<FiguraGeometrica> getFiguras(){
+        return this.figuras;
+    }
     
     
+ 
 }
