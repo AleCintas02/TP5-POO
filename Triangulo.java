@@ -3,11 +3,7 @@ public class Triangulo extends FiguraGeometrica
     double base;
     double altura;
 
-    /**
-     * Constructor for objects of class Triangulo
-     */
     public Triangulo(double p_base, double p_altura){
-        
         this.setBase(p_base);
         this.setAltura(p_altura);
     }
