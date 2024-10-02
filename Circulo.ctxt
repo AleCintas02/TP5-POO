@@ -1,0 +1,27 @@
+#BlueJ class context
+comment0.target=Circulo
+comment0.text=\r\n\ La\ clase\ Circulo\ representa\ un\ c\u00EDrculo\ definido\ por\ su\ radio\ y\ centro.\r\n\ Proporciona\ m\u00E9todos\ para\ establecer\ y\ obtener\ estos\ atributos,\ as\u00ED\ como\ para\ calcular\ el\ per\u00EDmetro,\ la\ superficie,\r\n\ la\ distancia\ a\ otro\ c\u00EDrculo,\ y\ para\ mostrar\ la\ informaci\u00F3n\ del\ c\u00EDrculo.\r\n\ \r\n\ @author\ Cintas\ Alejandro\r\n\ @author\ Larroza\ Lautaro\r\n
+comment1.params=p_radio\ p_sEjeMayor\ p_sEjeMenor\ p_centro
+comment1.target=Circulo(double,\ double,\ double,\ Punto)
+comment1.text=\r\n\ Constructor\ para\ objetos\ de\ la\ clase\ Circulo\ con\ radio\ y\ centro\ espec\u00EDficos.\r\n\ \r\n\ @param\ p_radio\ Radio\ del\ c\u00EDrculo.\r\n\ @param\ p_centro\ Punto\ que\ representa\ el\ centro\ del\ c\u00EDrculo.\r\n
+comment2.params=p_sEjeMayor\ p_sEjeMenor
+comment2.target=Circulo(double,\ double)
+comment2.text=\r\n\ Constructor\ por\ defecto\ que\ inicializa\ el\ radio\ a\ 0\ y\ el\ centro\ en\ el\ punto\ (0,\ 0).\r\n
+comment3.params=p_radio
+comment3.target=void\ setRadio(double)
+comment3.text=\r\n\ Establece\ el\ radio\ del\ c\u00EDrculo.\r\n\ \r\n\ @param\ p_radio\ Radio\ del\ c\u00EDrculo.\r\n
+comment4.params=
+comment4.target=double\ getRadio()
+comment4.text=\r\n\ Obtiene\ el\ radio\ del\ c\u00EDrculo.\r\n\ \r\n\ @return\ Radio\ del\ c\u00EDrculo.\r\n
+comment5.params=
+comment5.target=double\ perimetro()
+comment5.text=\r\n\ Calcula\ el\ per\u00EDmetro\ del\ c\u00EDrculo.\r\n\ \r\n\ @return\ Per\u00EDmetro\ del\ c\u00EDrculo.\r\n
+comment6.params=
+comment6.target=double\ superficie()
+comment6.text=\r\n\ Calcula\ la\ superficie\ del\ c\u00EDrculo.\r\n\ \r\n\ @return\ Superficie\ del\ c\u00EDrculo.\r\n
+comment7.params=otroCirculo
+comment7.target=double\ distanciaA(Circulo)
+comment7.text=\r\n\ Calcula\ la\ distancia\ entre\ el\ centro\ del\ c\u00EDrculo\ y\ el\ centro\ de\ otro\ c\u00EDrculo.\r\n\ \r\n\ @param\ otroCirculo\ Otro\ c\u00EDrculo\ para\ calcular\ la\ distancia.\r\n\ @return\ Distancia\ entre\ los\ centros\ de\ los\ dos\ c\u00EDrculos.\r\n
+comment8.params=
+comment8.target=java.lang.String\ nombreFigura()
+numComments=9
