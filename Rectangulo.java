@@ -6,9 +6,8 @@
  * 
  * @author Larroza Lautaro, Cintas Alejandro
  */
-public class Rectangulo
+public class Rectangulo extends FiguraGeometrica
 {
-    private Punto origen;
     private double ancho;
     private double alto;
 
@@ -21,7 +20,7 @@ public class Rectangulo
      */
     public Rectangulo(Punto p_origen, double p_ancho, double p_alto)
     {
-       this.setOrigen(p_origen);
+        super(p_origen);
        this.setAncho(p_ancho);
        this.setAlto(p_alto);
     }
@@ -34,19 +33,12 @@ public class Rectangulo
      */
     public Rectangulo(double p_ancho, double p_alto)
     {
-       this.setOrigen(new Punto(0.0, 0.0));
+       super(new Punto(0.0, 0.0));
        this.setAncho(p_ancho);
        this.setAlto(p_alto);
     }
     
-    /**
-     * Establece el origen del rectángulo.
-     * 
-     * @param p_origen Punto que representa el origen del rectángulo.
-     */
-    private void setOrigen(Punto p_origen){
-        this.origen = p_origen;
-    }
+ 
     
     /**
      * Establece el ancho del rectángulo.
@@ -66,14 +58,6 @@ public class Rectangulo
         this.alto = p_alto;
     }
     
-    /**
-     * Obtiene el origen del rectángulo.
-     * 
-     * @return Punto que representa el origen del rectángulo.
-     */
-    public Punto getOrigen(){
-        return this.origen;
-    }
     
     /**
      * Obtiene el ancho del rectángulo.

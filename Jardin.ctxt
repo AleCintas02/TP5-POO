@@ -1,10 +1,16 @@
 #BlueJ class context
 comment0.target=Jardin
-comment0.text=\r\n\ Write\ a\ description\ of\ class\ Jardin\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
-comment1.params=
-comment1.target=Jardin()
-comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ Jardin\r\n
-comment2.params=y
-comment2.target=int\ sampleMethod(int)
-comment2.text=\r\n\ An\ example\ of\ a\ method\ -\ replace\ this\ comment\ with\ your\ own\r\n\ \r\n\ @param\ \ y\ \ \ a\ sample\ parameter\ for\ a\ method\r\n\ @return\ \ \ \ \ the\ sum\ of\ x\ and\ y\ \r\n
-numComments=3
+comment1.params=p_nombre\ p_figuras
+comment1.target=Jardin(java.lang.String,\ java.util.ArrayList)
+comment1.text=\r\n\ \ \ \ \ \r\nConstructor\ for\ objects\ of\ class\ Jardin\r\n
+comment2.params=p_nombre
+comment2.target=Jardin(java.lang.String)
+comment3.params=p_nombre
+comment3.target=void\ setNombre(java.lang.String)
+comment4.params=p_figuras
+comment4.target=void\ setFiguras(java.util.ArrayList)
+comment5.params=
+comment5.target=java.lang.String\ getNombre()
+comment6.params=
+comment6.target=java.util.ArrayList\ getFiguras()
+numComments=7

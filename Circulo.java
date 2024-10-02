@@ -75,7 +75,7 @@ public class Circulo extends Elipse
      * @return Distancia entre los centros de los dos círculos.
      */
     public double distanciaA(Circulo otroCirculo){
-        return this.getCentro().distanciaA(otroCirculo.getCentro());
+        return this.getOrigen().distanciaA(otroCirculo.getOrigen());
     }
     
     public String nombreFigura(){
