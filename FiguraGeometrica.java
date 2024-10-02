@@ -5,29 +5,31 @@
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class FiguraGeometrica
+public abstract class FiguraGeometrica
 {
-    // instance variables - replace the example below with your own
-    private int x;
+    private Punto origen;
 
-    /**
-     * Constructor for objects of class FiguraGeometrica
-     */
-    public FiguraGeometrica()
+   
+    public FiguraGeometrica(Punto p_origen)
     {
-        // initialise instance variables
-        x = 0;
+        this.setOrigen(p_origen);
+    }
+    
+    private void setOrigen(Punto p_origen){
+        this.origen = p_origen;
+    }
+    
+    public Punto getOrigen(){
+        return this.origen;
+    }
+    
+    public abstract String nombreFigura();
+    public abstract double superficie();
+    
+    public void mostrarSuperficie(){
+        this.nombreFigura();
+        this.superficie();
     }
 
-    /**
-     * An example of a method - replace this comment with your own
-     * 
-     * @param  y   a sample parameter for a method
-     * @return     the sum of x and y 
-     */
-    public int sampleMethod(int y)
-    {
-        // put your code here
-        return x + y;
-    }
+    
 }

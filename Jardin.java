@@ -7,7 +7,6 @@
  */
 public class Jardin
 {
-    
     private int x;
 
     /**
