@@ -7,7 +7,7 @@
  */
 public class Triangulo
 {
-    // instance variables - replace the example below with your own
+    // weeeeeeeeeeeeeeeeeeeeeeee
     private int x;
 
     /**
