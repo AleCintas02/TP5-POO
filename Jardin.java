@@ -1,32 +1,24 @@
-
-/**
- * Write a description of class Jardin here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
- */
+import java.util.ArrayList;
 public class Jardin
 {
-    private int x;
+    String nombre;
+    ArrayList<FiguraGeometrica>figuras;
 
     /**
      * Constructor for objects of class Jardin
      */
-    public Jardin()
+     public Jardin(String p_nombre, ArrayList<FiguraGeometrica> figuras)
     {
-        // initialise instance variables
-        x = 0;
+        this.setNombre(p_nombre);
+        this.setFiguras(p_figuras);
     }
-
-    /**
-     * An example of a method - replace this comment with your own
-     * 
-     * @param  y   a sample parameter for a method
-     * @return     the sum of x and y 
-     */
-    public int sampleMethod(int y)
+    public Jardin(String p_nombre)
     {
-        // put your code here
-        return x + y;
+        this.setNombre(p_nombre);
+        this.setFiguras(new ArrayList<FiguraGeometrica>());
     }
+    
+    private void setNombre
+    
+    
 }

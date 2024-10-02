@@ -3,7 +3,8 @@ public class Triangulo extends FiguraGeometrica
     double base;
     double altura;
 
-    public Triangulo(double p_base, double p_altura){
+    public Triangulo(Punto p_origen,double p_base, double p_altura){
+        super(p_origen);
         this.setBase(p_base);
         this.setAltura(p_altura);
     }
