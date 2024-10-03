@@ -5,6 +5,7 @@ dependency1.type=UsesDependency
 dependency10.from=Banco
 dependency10.to=CajaDeAhorro
 dependency10.type=UsesDependency
+<<<<<<< HEAD
 dependency11.from=Banco
 dependency11.to=CuentaCorriente
 dependency11.type=UsesDependency
@@ -16,6 +17,19 @@ dependency13.to=SemiExclusivo
 dependency13.type=UsesDependency
 dependency14.from=AplicacionFacultad
 dependency14.to=Exclusivo
+=======
+dependency11.from=Profesor
+dependency11.to=Cargo
+dependency11.type=UsesDependency
+dependency12.from=Profesor
+dependency12.to=Exclusivo
+dependency12.type=UsesDependency
+dependency13.from=Profesor
+dependency13.to=SemiExclusivo
+dependency13.type=UsesDependency
+dependency14.from=Rectangulo
+dependency14.to=Punto
+>>>>>>> 10363a46e66d38082dff927b0c921af5814dde05
 dependency14.type=UsesDependency
 dependency15.from=AplicacionFacultad
 dependency15.to=Profesor
@@ -71,13 +85,22 @@ dependency6.type=UsesDependency
 dependency7.from=Profesor
 dependency7.to=Exclusivo
 dependency7.type=UsesDependency
+<<<<<<< HEAD
 dependency8.from=Profesor
 dependency8.to=SemiExclusivo
+=======
+dependency8.from=Triangulo
+dependency8.to=Punto
+>>>>>>> 10363a46e66d38082dff927b0c921af5814dde05
 dependency8.type=UsesDependency
 dependency9.from=Banco
 dependency9.to=Persona
 dependency9.type=UsesDependency
+<<<<<<< HEAD
 editor.fx.0.height=1056
+=======
+editor.fx.0.height=1048
+>>>>>>> 10363a46e66d38082dff927b0c921af5814dde05
 editor.fx.0.width=1936
 editor.fx.0.x=-8
 editor.fx.0.y=-8
