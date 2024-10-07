@@ -24,7 +24,7 @@ public class Triangulo extends FiguraGeometrica
     }
 
     public String nombreFigura(){
-        return "Triangulo";
+        return "****** Triangulo ******";
     }
     public double superficie(){
       return (this.getBase() * this.getAltura()) / 2; 

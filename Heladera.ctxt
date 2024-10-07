@@ -1,0 +1,21 @@
+#BlueJ class context
+comment0.target=Heladera
+comment1.params=p_marca\ p_precio\ p_stock\ p_pies\ p_puertas\ p_compresor
+comment1.target=Heladera(java.lang.String,\ float,\ int,\ int,\ int,\ boolean)
+comment2.params=p_pies
+comment2.target=void\ setPies(int)
+comment3.params=p_puertas
+comment3.target=void\ setPuertas(int)
+comment4.params=p_compresor
+comment4.target=void\ setCompresor(boolean)
+comment5.params=
+comment5.target=int\ getPies()
+comment6.params=
+comment6.target=int\ getPuertas()
+comment7.params=
+comment7.target=boolean\ getCompresor()
+comment8.params=
+comment8.target=void\ imprimir()
+comment9.params=p_cuotas\ p_interes
+comment9.target=float\ creditoConAdicional(int,\ float)
+numComments=10

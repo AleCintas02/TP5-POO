@@ -27,8 +27,8 @@ public abstract class FiguraGeometrica
     public abstract double superficie();
     
     public void mostrarSuperficie(){
-        this.nombreFigura();
-        this.superficie();
+         System.out.println(this.nombreFigura());
+         System.out.println(this.superficie());
     }
 
     

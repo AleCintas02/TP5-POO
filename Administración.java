@@ -21,6 +21,12 @@ public class Administración
        jardin.agregarFigura(circulo);
        jardin.agregarFigura(elipse);
        
+       
+       
+       
+       jardin.detalleFigura();
+ 
+        System.out.println("--------------------------------------------------------------- ");
        System.out.println("Total a cubrir: " + jardin.cuantosMetros());
        System.out.println("Latas: " + jardin.cuantosLatas());
        

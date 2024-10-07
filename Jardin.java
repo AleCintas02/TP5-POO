@@ -57,4 +57,13 @@ Constructor for objects of class Jardin
        return this.cuantosMetros()/5;
     }
     
+    public void detalleFigura(){
+        System.out.println("Presupuesto: " + this.getNombre() + "\n");
+        
+        for (FiguraGeometrica figura: this.getFiguras()){
+        figura.mostrarSuperficie();
+       }
+        
+    }
+    
 }
