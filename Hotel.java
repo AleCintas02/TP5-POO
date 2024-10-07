@@ -11,6 +11,12 @@ public class Hotel extends Alojamiento
         this.setTipoHabitacion(p_tipoHabitacion);
     }
     
+    public Hotel(String p_nombre, double p_precio, int p_diasAlquiler, String p_tipoHabitacion)
+    {
+        super(p_nombre, p_precio, p_diasAlquiler);
+        this.setTipoHabitacion(p_tipoHabitacion);
+    }
+    
     private void setTipoHabitacion(String p_tipoHabitacion){
         this.tipoHabitacion=p_tipoHabitacion;
     }
@@ -35,6 +41,7 @@ public class Hotel extends Alojamiento
     }
     
     public void liquidar(){
+        super.liquidar();
         System.out.println("Habitacion " + this.getTipoHabitaciones());
         System.out.println("Total: ------> " + this.costo());
     }

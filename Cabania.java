@@ -12,6 +12,12 @@ public class Cabania extends Alojamiento
         this.setNroHabitaciones(p_nroHabitaciones);
     }
     
+    public Cabania(String p_nombre, double p_precio, int p_diasAlquiler, int p_nroHabitaciones)
+    {
+        super(p_nombre, p_precio, p_diasAlquiler);
+        this.setNroHabitaciones(p_nroHabitaciones);
+    }
+    
     private void setNroHabitaciones(int p_nroHabitaciones){
         this.nroHabitaciones=p_nroHabitaciones;
     }
@@ -29,6 +35,7 @@ public class Cabania extends Alojamiento
     }
     
     public void liquidar(){
+        super.liquidar();
         System.out.println("Cabaña con " + this.getNroHabitaciones() + " habitaciones");
         System.out.println("Total: -------> " + this.costo());
     }
