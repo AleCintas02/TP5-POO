@@ -34,12 +34,10 @@ public class Delegacion extends Visitante
         return this.integrantes;
     }  
 
-    /**
-     * An example of a method - replace this comment with your own
-     * 
-     * @param  y   a sample parameter for a method
-     * @return     the sum of x and y 
-     */
+    public String tipoVisitante(){
+        return "Delegacion";
+    }
+
     public void inscribirIndividuo(Individuo p_individuo){
         this.getIntegrantes().add(p_individuo);
     }
@@ -54,7 +52,7 @@ public class Delegacion extends Visitante
             sumaEntradas+= individuo.entrada();
         }
         double descuento = sumaEntradas * 0.10;
-        double total = sumaEntradas - descuento;
+        return sumaEntradas - descuento;
     }
     
     public int cantidadIntegrantes(){
@@ -62,12 +60,31 @@ public class Delegacion extends Visitante
         for(Individuo individuo : this.getIntegrantes()){
             cont ++;
         }
+        return cont;
+    }
+    
+    public void mostrar(){
+        System.out.println( "-------------------------------------------------------------\nDelegación: " + super.getNombre() +
+                            "\n\nIntegrantes:");
+        for(Persona persona : this.listarPersonas()){
+            persona.mostrar();
+        }
+        
+        
+        System.out.println( "\nCantidad de Integrantes: " + this.cantidadIntegrantes() +
+                            "\n-------------------------------------------------------------");
+    }
+    
+    public void listarPorFecha(Calendar p_fecha, String p_visitante){
+        if(this.getFechaVisita().equals(p_fecha) && this.tipoVisitante().equalsIgnoreCase(p_visitante)){
+            this.mostrar();
+        }
     }
     
     public HashSet<Persona> listarPersonas(){
         HashSet<Persona> personas = new HashSet<>();
-        for(Persona persona: this.getIntegrantes()){
-            personas.add(persona);
+        for(Individuo individuo : this.getIntegrantes()){
+            personas.add(individuo.getPersona());
         }
         return personas;
     }

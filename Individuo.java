@@ -23,8 +23,7 @@ public class Individuo extends Visitante
     }
     
     public void listarPorFecha(Calendar p_fecha, String p_visitante){
-        int result = p_fecha.compareTo(this.getFechaVisita());
-        if(result == 0 && p_visitante.equalsIgnoreCase("Individuo")){
+        if(this.getFechaVisita().equals(p_fecha) && this.tipoVisitante().equalsIgnoreCase(p_visitante)){
             this.mostrar();
         }
     }
