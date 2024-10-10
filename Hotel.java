@@ -27,7 +27,7 @@ public class Hotel extends Alojamiento
     
     public int contar(String p_alojamiento){
         return p_alojamiento.equalsIgnoreCase("Hotel") ? 1 : 0;
-    }
+    }   
     
     public double costo(){
         if(this.getTipoHabitaciones().equalsIgnoreCase("Single")){
