@@ -20,7 +20,7 @@ public abstract class Etiqueta
    
     protected abstract String tipo();
     
-    /*public String toString(){
-        return this.tipo().equalsIgnoreCase("premium") ? "Tipo" + this.tipo() + super.toString() + " - Costo: " + this.getCVosto() + " - Colores: " + premium.getColores();
-    }*/
+    public String toString(){
+        return "Tipo" + this.tipo() + " - Costo: " + this.getCosto();
+    }
 }

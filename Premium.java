@@ -48,6 +48,10 @@ public class Premium extends Etiqueta
         return "Premium";
     }
     
+    public String toString(){
+        return super.toString() + " - Colores: "+ this.getColores();
+    }
+    
   
     
 }
