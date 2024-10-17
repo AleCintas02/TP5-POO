@@ -21,6 +21,6 @@ public abstract class Etiqueta
     protected abstract String tipo();
     
     public String toString(){
-        return "Tipo" + this.tipo() + " - Costo: " + this.getCosto();
+        return "Tipo " + this.tipo() + " - Costo: " + this.getCosto();
     }
 }

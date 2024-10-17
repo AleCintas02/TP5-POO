@@ -20,10 +20,11 @@ public class Delegacion extends Visitante
         this.setIntegrantes(p_integrantes);
 
     }
-    public Delegacion(String p_nombre, Calendar p_fechaVisita)
+    public Delegacion(String p_nombre, Calendar p_fechaVisita, Individuo p_individuo)
     {
         super(p_nombre,p_fechaVisita);
         this.setIntegrantes(new HashSet<>());
+        this.inscribirIndividuo(p_individuo);
     }
     
     private void setIntegrantes(HashSet<Individuo> p_integrantes){

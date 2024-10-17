@@ -1,49 +1,41 @@
 
-/**
- * Write a description of class Premium here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
- */
-public class Premium extends Etiqueta
-{
+public class Premium extends Etiqueta{
     private int colores;
-
-    public Premium(double p_costo, int p_colores)
-    {
+    
+    
+    public Premium(double p_costo, int p_colores){
         super(p_costo);
         this.setColores(p_colores);
     }
-    
+
     private void setColores(int p_colores){
         this.colores = p_colores;
     }
     
-    private double getColores(){
-        return this.colores;
-    }
+    public int getColores(){return this.colores;}
+    
     
     public double precio(int q){
-        double aducional = q * this.adicional();
-        return q + aducional;
+        return (super.getCosto() + adicional()) * q;
     }
     
-    public double adicional(){
-        double adicional;
-        if(this.getColores() == 2){
-            return 0.05;
-        }else{
-            if(this.getColores() == 3){
-                return 0.07;
-            }else{
-                if(this.getColores() > 3){
-                     return (this.getColores() * 3) / 100;
-                }
-            }
-        }
-        return 1;
+   
+    private double adicional(){
+        double costo = super.getCosto();
+        int colores = this.getColores();
+        
+        switch(colores){
+            case 1: return 0;
+            
+            case 2: return costo * 0.05;
+            
+            case 3: return costo * 0.07;
+            
+            default: return costo * (colores * 0.03);
+        }        
     }
-    
+
+   
     protected String tipo(){
         return "Premium";
     }
@@ -51,7 +43,7 @@ public class Premium extends Etiqueta
     public String toString(){
         return super.toString() + " - Colores: "+ this.getColores();
     }
-    
-  
-    
 }
+
+    
+
